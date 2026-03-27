@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitnesReview — Обзор фитнес‑приложений</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="hero">
+      <nav class="top-nav container">
+        <a href="index.html" class="brand">FitnesReview</a>
+        <div class="nav-links">
+          <a data-i18n="nav.home" href="index.html">Главная</a>
+          <a data-i18n="nav.catalog" href="apps.html">Каталог</a>
+          <a data-i18n="nav.compare" href="compare.html">Сравнения</a>
+          <a data-i18n="nav.guides" href="guides.html">Гайды</a>
+          <a data-i18n="nav.about" href="about.html">О проекте</a>
+        </div>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </nav>
+      <section class="container hero-content">
+        <p class="badge" data-i18n="hero.badge">Сервис №1 по обзорам fitness apps</p>
+        <h1 data-i18n="hero.title">Выбери идеальное фитнес‑приложение под свою цель</h1>
+        <p class="hero-lead" data-i18n="hero.lead">
+          Большая база приложений: тренировки дома и в зале, бег, йога, питание,
+          медитация, трекинг привычек и планы для похудения.
+        </p>
+        <div class="hero-actions">
+          <a href="apps.html" class="btn btn-primary" data-i18n="hero.primary">Открыть каталог</a>
+          <a href="compare.html" class="btn btn-secondary" data-i18n="hero.secondary">Смотреть сравнения</a>
+        </div>
+      </section>
+    </header>
+
+    <main class="container space-y">
+      <section>
+        <h2 data-i18n="section.popular">Популярные приложения</h2>
+        <div id="featuredGrid" class="cards-grid"></div>
+      </section>
+
+      <section>
+        <h2 data-i18n="section.categories">Категории</h2>
+        <div id="categoryGrid" class="category-grid"></div>
+      </section>
+
+      <section class="stats-panel">
+        <div>
+          <strong>120+</strong>
+          <span data-i18n="stats.apps">приложений в базе</span>
+        </div>
+        <div>
+          <strong>40+</strong>
+          <span data-i18n="stats.guides">практических гайдов</span>
+        </div>
+        <div>
+          <strong>18</strong>
+          <span data-i18n="stats.updated">обновлений рейтингов за год</span>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2026 FitnesReview</p>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

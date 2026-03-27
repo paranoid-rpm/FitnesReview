@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Каталог приложений — FitnesReview</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="apps">
+    <header class="sub-hero">
+      <nav class="top-nav container">
+        <a href="index.html" class="brand">FitnesReview</a>
+        <div class="nav-links">
+          <a data-i18n="nav.home" href="index.html">Главная</a>
+          <a data-i18n="nav.catalog" href="apps.html">Каталог</a>
+          <a data-i18n="nav.compare" href="compare.html">Сравнения</a>
+          <a data-i18n="nav.guides" href="guides.html">Гайды</a>
+          <a data-i18n="nav.about" href="about.html">О проекте</a>
+        </div>
+        <button id="langToggle" class="lang-toggle">EN</button>
+      </nav>
+      <div class="container">
+        <h1 data-i18n="apps.title">Большой каталог фитнес‑приложений</h1>
+      </div>
+    </header>
+
+    <main class="container space-y">
+      <section class="filter-bar">
+        <label for="categoryFilter" data-i18n="apps.filter">Фильтр по категории:</label>
+        <select id="categoryFilter">
+          <option value="all" data-i18n="apps.all">Все</option>
+        </select>
+      </section>
+      <section>
+        <div id="appsGrid" class="cards-grid"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container"><p>© 2026 FitnesReview</p></div>
+    </footer>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
