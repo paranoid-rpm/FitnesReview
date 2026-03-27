@@ -3,23 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Гайды — FitnesReview</title>
+    <title>Гайды - FitnesReview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body data-page="guides">
+    <div class="site-bg" aria-hidden="true">
+      <span class="bg-orb bg-orb-1"></span>
+      <span class="bg-orb bg-orb-2"></span>
+      <span class="bg-grid"></span>
+    </div>
+
     <header class="sub-hero">
       <nav class="top-nav container">
         <a href="index.html" class="brand">FitnesReview</a>
         <div class="nav-links">
-          <a data-i18n="nav.home" href="index.html">Главная</a>
-          <a data-i18n="nav.catalog" href="apps.html">Каталог</a>
-          <a data-i18n="nav.compare" href="compare.html">Сравнения</a>
-          <a data-i18n="nav.guides" href="guides.html">Гайды</a>
-          <a data-i18n="nav.about" href="about.html">О проекте</a>
+          <a data-page="home" data-i18n="nav.home" href="index.html">Главная</a>
+          <a data-page="apps" data-i18n="nav.catalog" href="apps.html">Каталог</a>
+          <a data-page="compare" data-i18n="nav.compare" href="compare.html">Сравнения</a>
+          <a data-page="guides" data-i18n="nav.guides" href="guides.html">Гайды</a>
+          <a data-page="about" data-i18n="nav.about" href="about.html">О проекте</a>
         </div>
-        <button id="langToggle" class="lang-toggle">EN</button>
+        <div class="nav-actions">
+          <a class="nav-cta" data-i18n="nav.cta" href="apps.html">Выбрать приложение</a>
+          <button id="langToggle" class="lang-toggle" type="button">EN</button>
+        </div>
       </nav>
-      <div class="container"><h1 data-i18n="guides.title">Гайды и образовательные материалы</h1></div>
+      <div class="container sub-hero-content">
+        <h1 data-i18n="guides.title">Гайды и образовательные материалы</h1>
+      </div>
     </header>
 
     <main class="container space-y">
